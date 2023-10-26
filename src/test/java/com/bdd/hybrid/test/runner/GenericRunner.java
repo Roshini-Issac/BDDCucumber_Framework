@@ -4,9 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.AfterClass;
 
-@CucumberOptions(features = { "classpath:featurefile/Fetch_Book_Details_Get_Api.feature" }, glue = { "classpath:com.cucumber.uvs.ecom.test.stepdefinition",
-		"classpath:com.cucumber.uvs.ecom.helper" }, plugin = { "pretty", "json:target/UVSEComm.json",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true, tags = {
+@CucumberOptions(features = { "classpath:featurefile/getOrder_API.feature" }, glue = { "classpath:com.cucumber.test.stepdefinition"}, plugin = { "pretty", "json:target/output.json", monochrome = true, tags = {
 						"@Api" })
 
 
